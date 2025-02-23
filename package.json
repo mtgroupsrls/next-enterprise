@@ -1,9 +1,10 @@
 {
-  "name": "next-enterprise",
+  "name": "ne-presets",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "cross-env FORCE_COLOR=1 next dev --turbo",
+    "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
+    "dev:turbo": "cross-env FORCE_COLOR=1 next dev --turbo",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -47,11 +48,15 @@
     "@t3-oss/env-nextjs": "^0.10.1",
     "@vercel/otel": "^1.8.3",
     "class-variance-authority": "^0.7.0",
+    "exiftool-vendored": "^22.0.0",
+    "fast-xml-parser": "^4.3.2",
     "lodash": "^4.17.21",
     "next": "15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "sharp": "^0.33.0",
     "tailwind-merge": "^2.3.0",
+    "xmlbuilder2": "^3.1.1",
     "zod": "^3.23.8"
   },
   "devDependencies": {
